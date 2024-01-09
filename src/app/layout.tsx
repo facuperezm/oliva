@@ -20,7 +20,7 @@ export default function RootLayout({
       lang="en"
       className={cn("min-h-screen scroll-smooth antialiased", roboto.className)}
     >
-      <body className={cn(roboto.className, "container")}>{children}</body>
+      <body className={cn(roboto.className, "md:container")}>{children}</body>
     </html>
   );
 }

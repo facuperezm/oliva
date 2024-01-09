@@ -22,7 +22,7 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </AspectRatio>
-        <div className="flex gap-4 items-center container px-2">
+        <div className="flex gap-4 items-center container px-2 bg-lime-100/20 my-2">
           <Avatar className="z-10 -mt-5 w-28 h-28 md:w-30 md:h-30 border-4 border-white">
             <AvatarImage className="md:" src="/images/oliva-logo.jpeg" />
             <AvatarFallback>Oliva</AvatarFallback>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-2">
           <Product imgsrc="/images/sandui-ham-and-cheese.jpeg" />
           <Product imgsrc="/images/sandui-mortadela.jpeg" />
           <Product imgsrc="/images/sandui-milanesa.jpeg" />
