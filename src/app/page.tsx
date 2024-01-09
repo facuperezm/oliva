@@ -33,12 +33,12 @@ export default function Home() {
                 Oliva
               </h1>
               <div className="flex gap-2">
-                <Link href="https://wa.me/543757407400">
+                <Link href="https://wa.me/543757616764">
                   <div className="size-8 text-white bg-lime-500 hover:bg-lime-600 transition-all p-1.5 rounded-full">
                     <WhatsApp className=" text-white" />
                   </div>
                 </Link>
-                <Link href="https://instagram.com/olivaiguazu">
+                <Link href="https://instagram.com/oliva.iguazu">
                   <div className="size-8 text-white bg-lime-500 hover:bg-lime-600 transition-all p-[1px] rounded-full">
                     <Instagram className=" text-white" />
                   </div>
