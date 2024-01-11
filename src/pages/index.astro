@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h2 class="subtitle">Menu</h2>
+    <h1>Sandwich</h1>
+    <img class="beer" src="/images/beer.png" alt="beer" />
+    <img class="sub" src="/images/sub.png" alt="sub" />
+    <img class="limonade" src="/images/limonada.png" alt="limonada" />
+    <img class="sandwich" src="/images/sandwich.png" alt="sandwich" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: #004aad;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "White Star", sans-serif;
+  }
+  .subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .sub {
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    right: -50px;
+  }
+  .beer {
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: -40px;
+  }
+  .limonade {
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: -40px;
+  }
+  .sandwich {
+    width: 150px;
+    position: absolute;
+    bottom: 100px;
+    left: -30px;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>
