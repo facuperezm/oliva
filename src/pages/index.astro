@@ -1,100 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h2 class="subtitle">Menu</h2>
-    <h1>Sandwich</h1>
-    <img class="beer" src="/images/beer.png" alt="beer" />
-    <img class="sub" src="/images/sub.png" alt="sub" />
-    <img class="limonade" src="/images/limonada.png" alt="limonada" />
-    <img class="sandwich" src="/images/sandwich.png" alt="sandwich" />
+<Layout title="Oliva">
+  <main class="flex flex-col">
+    <div class="my-10">
+      <h1 class="text-center uppercase text-5xl text-gray-400">Menu</h1>
+      <h2 class="font-serif text-center text-7xl -mt-3">Sandwich</h2>
+    </div>
+    <img
+      class="absolute w-20 top-4 -left-10 opacity-50"
+      src="/images/beer.png"
+      alt="beer"
+    />
+    <img
+      class="absolute w-36 -right-14 opacity-50"
+      src="/images/sub.png"
+      alt="sub"
+    />
+    <img
+      class="absolute w-36 top-1/2 -left-10 opacity-50"
+      src="/images/limonada.png"
+      alt="limonada"
+    />
+    <img
+      class="absolute w-36 bottom-0 -right-14 opacity-50"
+      src="/images/sandwich.png"
+      alt="sandwich"
+    />
+    <img
+      class="absolute w-36 top-[30%] -right-14 opacity-50"
+      src="/images/salad.png"
+      alt="salad"
+    />
+    <section class="flex flex-col gap-6 justify-center">
+      <article class="font-sans mx-auto">
+        <span class="font-serif text-2xl -mb-[0.73rem]">Ciabatta</span>
+        <div class="-mt-[0.73rem]">
+          <span>J&Q</span>
+          <span>________________</span>
+          <span>$ 3.000</span>
+        </div>
+        <div>
+          <span>Jamón y queso</span>
+        </div>
+      </article>
+      <article class="font-sans mx-auto">
+        <span class="font-serif text-2xl -mb-[0.73rem]">Miga</span>
+        <div class="-mt-[0.50rem]">
+          <div>
+            <span>J&Q</span>
+            <span>________________</span>
+            <span>$ 3.000</span>
+          </div>
+          <div>
+            <span>Jamón y queso</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span>J&Q</span>
+            <span>________________</span>
+            <span>$ 3.000</span>
+          </div>
+          <div>
+            <span>Jamón y queso</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span>J&Q</span>
+            <span>________________</span>
+            <span>$ 3.000</span>
+          </div>
+          <div>
+            <span>Jamón y queso</span>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: #004aad;
-    font-size: 20px;
-    line-height: 1.6;
-    font-family: "White Star", sans-serif;
-  }
-  .subtitle {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .sub {
-    width: 150px;
-    position: absolute;
-    top: 100px;
-    right: -50px;
-  }
-  .beer {
-    width: 100px;
-    position: absolute;
-    top: 100px;
-    left: -40px;
-  }
-  .limonade {
-    width: 100px;
-    position: absolute;
-    bottom: 100px;
-    right: -40px;
-  }
-  .sandwich {
-    width: 150px;
-    position: absolute;
-    bottom: 100px;
-    left: -30px;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
-  }
-</style>
