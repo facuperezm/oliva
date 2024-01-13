@@ -1,0 +1,21 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Miga - Oliva Iguazú">
+  <section class="flex flex-col gap-6 justify-center">
+    <span class="font-serif text-2xl -mb-[0.73rem]">Miga</span>
+    <Card title="J&Q" description="Jamón y queso" price={3000} />
+    <Card
+      title="VEGGIE"
+      description="Queso, rúcula, zanahoria y tomate"
+      price={3000}
+    />
+    <Card
+      title="VEGGIE 2"
+      description="Queso, huevo y aceitunas"
+      price={3000}
+    />
+  </section>
+</Layout>

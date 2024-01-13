@@ -1,0 +1,26 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Ensaladas - Oliva Iguazú">
+  <section class="flex flex-col gap-6 justify-center">
+    <span class="font-serif text-2xl -mb-[0.73rem]">Ensaladas</span>
+    <Card
+      title="MIX 1"
+      description="Lechuga, tomate, huevo y zanahoria"
+      price={3000}
+    />
+    <Card
+      title="MIX 2"
+      description="Lechuga, tomate, pollo, queso en hebras y croutones"
+      price={500}
+    />
+    <Card
+      title="MIX 3"
+      description="Lechuga, tomate, fideo tirabuzones, lenteja y huevo duro"
+      price={1000}
+    />
+    <Card title="VASO FRUTAL" description="Frutas de estación" price={1000} />
+  </section>
+</Layout>
