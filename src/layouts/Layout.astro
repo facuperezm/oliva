@@ -24,7 +24,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="">
+  <body>
     <header>
       <div class="my-10">
         <h1 class="text-center uppercase text-5xl text-gray-400">Menu</h1>
@@ -58,6 +58,9 @@ const { title } = Astro.props;
       <nav class="flex">
         <ul class="flex gap-4 mx-auto uppercase font-medium mb-5">
           <li class="hover:underline">
+            <a href="/">Ciabatta</a>
+          </li>
+          <li class="hover:underline">
             <a href="/miga">Miga</a>
           </li>
           <li class="hover:underline">
@@ -66,13 +69,10 @@ const { title } = Astro.props;
           <li class="hover:underline">
             <a href="/bebidas">Bebidas</a>
           </li>
-          <li class="hover:underline">
-            <a href="/">Ciabatta</a>
-          </li>
         </ul>
       </nav>
     </header>
-    <main class="flex flex-col px-6 md:max-w-sm md:mx-auto">
+    <main class="flex flex-col max-w-sm mx-auto px-6">
       <slot transition:animate={fade({ duration: "10s" })} />
     </main>
     <style is:global>
@@ -86,8 +86,7 @@ const { title } = Astro.props;
       html {
         background: #f5e9db;
         color: #004aad;
-        overflow: hidden;
-        height: 100vh;
+        height: 100svh;
       }
     </style>
   </body>
