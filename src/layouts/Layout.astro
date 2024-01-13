@@ -8,7 +8,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="bg-[#f5e9db] text-[#004aad]" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -20,9 +20,17 @@ const { title } = Astro.props;
       content="sandwich, ensalada, miga, ciabatta, bebidas, limonada, cerveza, salad, beer, lemonade, drinks, ciabatta, miga, sandwich"
     />
     <ViewTransitions />
+    <slot name="preload" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <link
+      rel="preload"
+      href="/fonts/whitestar.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
   </head>
   <body>
     <header>
@@ -41,7 +49,7 @@ const { title } = Astro.props;
         alt="sub"
       />
       <img
-        class="absolute w-36 top-1/2 -left-10 opacity-50"
+        class="absolute w-28 top-2/3 -left-10 opacity-50"
         src="/images/limonada.png"
         alt="limonada"
       />
@@ -51,7 +59,7 @@ const { title } = Astro.props;
         alt="sandwich"
       />
       <img
-        class="absolute w-36 top-[30%] -right-14 opacity-50"
+        class="absolute w-32 top-[30%] -right-14 opacity-50"
         src="/images/salad.png"
         alt="salad"
       />
@@ -82,12 +90,6 @@ const { title } = Astro.props;
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-      }
-      html {
-        background: #f5e9db;
-        color: #004aad;
-        height: 100svh;
-        overflow: clip;
       }
     </style>
   </body>
